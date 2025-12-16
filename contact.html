@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="main-navbar">
+        <ul>
+            <li><a href="main.html">Home / Hobbies</a></li>
+            <li><a href="htmlCS.html">HTML Cheat Sheet</a></li>
+            <li><a href="cssCS.html">CSS Cheat Sheet</a></li>
+            <li><a href="jsCS.html">JS Cheat Sheet</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main id="main-content">
+        <section class="page-section">
+            <div class="contact-flexbox">
+                <div class="contact-title">
+                    <h2>Send me a Email</h2>
+                    <p>Leave your info and ill get back as soon as I can</p>
+                </div>
+                    <form class="contact-form" id="contactForm" action="#" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <button type="submit">Send</button>
+                    </form>
+                    <div id="formSuccess" style="display:none;color:green;margin-top:1em;font-weight:600;">Thank you for contacting us!</div>
+                </form>
+            </div>
+        </section>
+    </main>
+</main>
+<script defer src="scripts.js"></script>
+</body>
+</html>
